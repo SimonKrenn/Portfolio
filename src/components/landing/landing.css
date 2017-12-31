@@ -1,5 +1,5 @@
 .container {
-  height: 1145px;
+  height: 700px;
   padding: 64px; }
 
 .header {
@@ -28,6 +28,9 @@
     float: right; }
   .card-grid .service-bg {
     float: left; }
+  .card-grid .contact-bg {
+    z-index: 1; }
 
 p {
-  display: inline; }
+  display: inline;
+  z-index: 100; }

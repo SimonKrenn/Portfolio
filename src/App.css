@@ -1,3 +1,40 @@
 .page-container {
   margin: 0 auto;
   width: 100%; }
+
+.landing-container {
+  height: 700px;
+  padding: 64px; }
+
+.header {
+  height: 57px; }
+
+.text-container {
+  padding-left: 64px;
+  margin-top: 80px; }
+  .text-container h1 {
+    font-size: 70px; }
+
+.card-grid {
+  margin-top: 120px;
+  display: flex;
+  align-content: space-between; }
+  .card-grid .card {
+    width: 400px;
+    height: 240px;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0 10px 9px 0 rgba(177, 177, 177, 0.5);
+    border-radius: 7px; }
+  .card-grid .card:hover {
+    box-shadow: 0 15px 20px 0 rgba(177, 177, 177, 0.5); }
+  .card-grid .work-bg {
+    float: right; }
+  .card-grid .service-bg {
+    float: left; }
+  .card-grid .contact-bg {
+    z-index: 1; }
+
+p {
+  display: inline;
+  z-index: 100; }

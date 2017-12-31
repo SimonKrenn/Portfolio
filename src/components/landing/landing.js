@@ -3,6 +3,7 @@ import './landing.css';
 import logo from '../../assets/logo.svg'
 import workbg from '../../assets/work-bg.svg'
 import servicebg from '../../assets/service-bg.svg'
+import contactbg from '../../assets/contact-bg.svg'
 import Fade from 'react-reveal/Fade';
 
 class Landing extends Component {
@@ -10,7 +11,9 @@ class Landing extends Component {
         return (
             <div className="container">
                 <div className="header">
+                    <Fade top delay={300} duration={2000}>
                     <img src={logo} className="page-logo" alt="logo" />
+                    </Fade>
                 </div>
 
                 <div className="text-container">
@@ -23,17 +26,19 @@ class Landing extends Component {
                     </Fade>
                 </div>
 
-                <div className="card-grid">
-                    <div className="card">
-                        <img src={workbg} className="work-bg" alt="work background" />
+                <Fade bottom delay={400} duration={3000}>
+                    <div className="card-grid">
+                        <div className="card">
+                            <img src={workbg} className="work-bg" alt="work background" />
+                        </div>
+                        <div className="card">
+                            <img src={servicebg} className="service-bg" alt="service background" />
+                        </div>
+                        <div className="card">
+                            <img src={contactbg} className="contact-bg" alt="about background"/>
+                        </div>
                     </div>
-                    <div className="card">
-                        <img src={servicebg} className="service-bg" alt="service background" />
-                    </div>
-                    <div className="card">
-                        <p>Contact</p>
-                    </div>
-                </div>
+                </Fade>
             </div>
         );
     }
